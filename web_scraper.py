@@ -15,6 +15,8 @@ newsletters = [
     "https://tldr.tech/tech/archives",
     "https://tldr.tech/webdev/archives",
     "https://tldr.tech/ai/archives",
+    "https://tldr.tech/design/archives",
+    "https://tldr.tech/marketing/archives",
     "https://tldr.tech/crypto/archives",
     # "https://reactnewsletter.com/issues",
 ]
@@ -155,3 +157,6 @@ for news_type in stories_by_type:
 # print(soup.prettify())
 with open("scraper_result.html", "w", encoding="utf-8") as f:
     f.write(soup.prettify())
+
+
+os.system("scraper_result.html")
